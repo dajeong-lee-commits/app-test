@@ -8,7 +8,20 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <script>
+    window.onload = () => {
+        let openBtn = document.getElementsByClassName('menu_open')[0];
+        let closeBtn = document.getElementsByClassName('menu_close')[0];
+        let nav = document.getElementsByClassName('nav')[0];
 
+        openBtn.addEventListener('click', () => {
+            nav.style.display = 'block';
+        });
+        closeBtn.addEventListener('click', () => {
+            nav.style.display = 'none';
+        });
+
+
+    };
 </script>
 
 <body>
@@ -23,38 +36,56 @@
                     <button class="menu_close"><img src="img/icons8-지우다-50.png" alt=""></button>
                     <ul class="gnb">
                         <li>
-                            <a href="#" class="depth-01">쇼핑</a>
+                            <a href="#" class="depth-01">MY</a>
                             <ul class="depth-02">
-                                <li><a href="#">메뉴1</a></li>
-                                <li><a href="#">메뉴2</a></li>
-                                <li><a href="#">메뉴3</a></li>
-                            </ul>
-                            <ul class="depth-02">
-                                <li><a href="#">메뉴1</a></li>
-                                <li><a href="#">메뉴2</a></li>
-                                <li><a href="#">메뉴3</a></li>
-                            </ul>
-                            <ul class="depth-02">
-                                <li><a href="#">메뉴1</a></li>
-                                <li><a href="#">메뉴2</a></li>
-                                <li><a href="#">메뉴3</a></li>
-                            </ul>
-                            <ul class="depth-02">
-                                <li><a href="#">메뉴1</a></li>
-                                <li><a href="#">메뉴2</a></li>
-                                <li><a href="#">메뉴3</a></li>
-                            </ul>
-                            <ul class="depth-02">
-                                <li><a href="#">메뉴1</a></li>
-                                <li><a href="#">메뉴2</a></li>
-                                <li><a href="#">메뉴3</a></li>
-                            </ul>
-                            <ul class="depth-02">
-                                <li><a href="#">메뉴1</a></li>
-                                <li><a href="#">메뉴2</a></li>
-                                <li><a href="#">메뉴3</a></li>
+                                <li><a href="#">내정보</a></li>
+                                <li><a href="#">MY쇼핑</a></li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="#" class="depth-01">쇼핑</a>
+                            <ul class="depth-02">
+                                <li><a href="#">신제품</a></li>
+                                <li><a href="#">베스트</a></li>
+                                <li><a href="#">시리즈</a></li>
+                                <li><a href="#">키워드</a></li>
+                                <li><a href="#">연령별</a></li>
+                                <li><a href="#">홈앤데코</a></li>
+                                <li><a href="#">레고굿즈</a></li>
+                                <li><a href="#">할인 · 행사</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth-01">조립가이드</a>
+                            <ul class="depth-02">
+                                <li><a href="#">카탈로그</a></li>
+                                <li><a href="#">설명서찾기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth-01">커뮤니티</a>
+                            <ul class="depth-02">
+                                <li><a href="#">갤러리</a></li>
+                                <li><a href="#">EVENT</a></li>
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth-01">브랜드</a>
+                            <ul class="depth-02">
+                                <li><a href="#">기업소개</a></li>
+                                <li><a href="#">레고소식</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth-01">고객센터</a>
+                            <ul class="depth-02">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">1:1문의</a></li>
+                            </ul>
+                        </li>
+
                     </ul>
                 </nav><!-- .nav end -->
             </div><!-- .inner end -->
